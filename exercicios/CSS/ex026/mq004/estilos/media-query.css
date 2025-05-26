@@ -1,0 +1,82 @@
+@charset "UTF-8";
+/* todas as outras versões de midia*/
+body{
+    background-size: cover;
+}
+
+
+
+
+
+@media print{
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    img#phone{display:none;}
+    img#tablet{display:none;}
+    img#pc{display:none;}
+    img#print{display:block;}
+    img#tv{display:none;}
+    body{
+        background-image: url(../imagens/back-phone.jpg);
+    }
+    main{
+        border: 2px solid black;width: 90vw;
+    }
+        main::after{
+        content: "Essa impressão foi feita para o curso HTML5" ;
+        text-decoration: overline;
+        text-align: center;}
+
+    main h1{
+        text-shadow: none;
+        color:azure
+    }
+
+}
+
+
+
+
+@media screen and (min-width:768px) and ( max-width:992px){
+body{
+    background-image: url(../imagens/back-tablet.jpg);
+    background-size: cover;
+    img#phone{display:none;}
+    img#tablet{display:block;}
+    img#pc{display:none;}
+    img#print{display:none;}
+    img#tv{display:none;}
+
+}
+}
+
+@media screen and (min-width:992px) and (max-width:1220px){
+body{
+    background-image: url(
+        ../imagens/back-pc.jpg
+    );
+
+}
+img#phone{display:none;}
+img#tablet{display:none;}
+img#pc{display:block;}
+img#print{display:none;}
+img#tv{display:none;}
+
+}
+
+
+
+@media screen and (min-width:1220px){
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    img#phone{display:none;}
+    img#tablet{display:none;}
+    img#pc{display:none;}
+    img#print{display:none;}
+    img#tv{display:block;}
+
+
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+*{
+   
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+body{
+    background-color: bisque;
+    color: rgb(38, 95, 144);
+}
+section{
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+    padding:10px;
+    margin: auto;
+
+}
+input#roxo:hover{
+color:red;
+background-color:purple;
+
+
+
+}
+    </style>
+</head>
+<body>
+    <main>
+        
+            <h1>Meu primeiro formulario</h1>
+           <section>
+               <form action="cadastro.c#" method="get" autocomplete="off">
+                <p>
+                    <label for="inome">nome:</label><input type="text" name="nome" id="inome">
+                </p>
+                 <p><label for="idata">Data de nascimento:</label> <input type="date" name="data" id="idata"></p>
+                 <input id="roxo" type="submit" value="cadastrar">
+               </form>
+           </section>
+</body>
+</html>

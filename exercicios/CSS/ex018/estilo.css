@@ -1,0 +1,15 @@
+@charset "utf-8";
+@font-face{
+    font-family: pokemon;
+    src: url('pokemon/Pokemon\ Hollow.ttf') format(truetype), url('pokemon/Pokemon\ Solid.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+body{
+font-family:pokemon,sans-serif;
+}
+h1{
+    font-family:pokemon;
+    font-size: 3em;
+    font-weight:bold
+}
