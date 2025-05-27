@@ -6,12 +6,16 @@
     content="width=device-width, initial-scale=1.0">
     <title>Menu com flex-box</title>
     <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/mobile.css" media="(max-width:575px)">
+
+     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
       <h1>Meu site</h1>
+      <i class="material-symbols-outlined" id="burger" onclick="clickMenu()">Menu</i>
 
-      <menu>
+      <menu id="itens">
         
         <a href="#">Opção 1</a>
         <a href="#">Opção 2</a>
@@ -29,7 +33,25 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, distinctio modi. Delectus laudantium facilis dicta obcaecati distinctio minus sint iusto esse est modi repellat maxime ratione, similique necessitatibus odio? Quam?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas veniam aut animi, minima deleniti, quibusdam ea blanditiis natus nulla quas quam voluptatum ratione dolor iste facere tempora aperiam, laboriosam at.</p>
       </section>
     </main>
- 
+  <script>
+    function mudouTamanho(){
+      if (window.innerwidth >= 575){
+        itens.style.display = 'flex';
+        }else{
+            itens.style.display = 'none';
+        }
+    }
+    
+    
+    function clickMenu(){
+     if (itens.style.display == 'flex'){
+        itens.style.display = 'none';
+     }else{
+        itens.style.display = 'flex';
+     }
+
+    }
+   </script>
 
 
 </body>

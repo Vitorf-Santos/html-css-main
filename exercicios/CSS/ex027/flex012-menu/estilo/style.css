@@ -22,18 +22,27 @@ header{
     padding: 10px;
     
 }
+h1{
+     text-shadow:2px 2px 0px rgba(0, 0, 0, 0.335);
+}
 header>h1{
     color:rgb(255, 255, 255);
-    text-shadow:2px 2px 2px black;
-    border:1px solid black;
+   
+    /* border:1px solid black; */
 
     flex: 0 0 200px;
     
     
 }
+header>i{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius:5px;
+}
 
 header>menu{
-   border:1px solid black;
+   /* border:1px solid black; */
   
 
   display:flex;
@@ -67,9 +76,7 @@ header>menu>a:hover{
 
 
 }
-main{
-   
-}
+
 main>section{
     border:1px solid rgb(255, 255, 255);
     border-radius: 10px;

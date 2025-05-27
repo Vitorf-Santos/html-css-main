@@ -5,8 +5,7 @@
         display: none;
     }
     menu{
-        display
-    : block;
+        display: block;
     }
     menu>ul>li{
         display: inline-block;
